@@ -2,7 +2,9 @@
 ---------------------------------------------------------------------------------------------- Backgrounds:
 */
 #home {
-  background-image: url("https://image.prntscr.com/image/mckyWX-OQo_bmpNlQU1kCA.png");
+  /* background-image: url("https://image.prntscr.com/image/mckyWX-OQo_bmpNlQU1kCA.png"); */
+  background-image: url("../Resources/Images/Backgrounds/home.png");
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
@@ -13,7 +15,8 @@
 }
 
 #about {
-  background-image: url("https://image.prntscr.com/image/M9EjnZ-pThq9RxhXK7ZBnA.png");
+  /* background-image: url("https://image.prntscr.com/image/M9EjnZ-pThq9RxhXK7ZBnA.png"); */
+  background-image: url("../Resources/Images/Backgrounds/about-me.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
@@ -24,7 +27,8 @@
 }
 
 #projects {
-  background-image: url("https://image.prntscr.com/image/HnX46g6ORX6loEQ-dU1w3w.png");
+  /* background-image: url("https://image.prntscr.com/image/HnX46g6ORX6loEQ-dU1w3w.png"); */
+  background-image: url("../Resources/Images/Backgrounds/projects.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
@@ -35,7 +39,8 @@
 }
 
 #contact {
-  background-image: url("https://image.prntscr.com/image/FKtlUE3KTEage6uQHdAzhg.png");
+  /* background-image: url("https://image.prntscr.com/image/FKtlUE3KTEage6uQHdAzhg.png"); */
+  background-image: url("../Resources/Images/Backgrounds/contact.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
