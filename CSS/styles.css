@@ -42,8 +42,49 @@
 
 .see-more-container{
   position: absolute;
-    top: 93vh;
+  top: 93vh;
 } 
+.container-fluid{
+  padding-left: 0px;
+}
+.see-more-text{
+  color: white;
+  font-family: "Patua One", cursive;
+  font-size: 20px;
+}
+
+.heading{
+  color: white;
+  font-family: "Patua One", cursive;
+  font-size: 45px;
+}
+
+.portret {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 3px;
+  width: 350px;
+  height: 350px;;
+}
+
+.about-me-text{
+  color: white;
+  font-family: "Patua One", cursive;
+  /* font-size: 35px; */
+  text-align: center;
+  background-color: lightgray;
+  border-radius: 25px;
+  background: transparent;
+  background-color: rgba(192, 192, 192, 0.7);
+  text-indent: 30px;
+  /* margin: 15px 25px 10px 35px; */
+  /* margin-left: 35px;
+  margin-right: 25px; */
+  margin-top: 25px;
+  font-size: 2vw;
+}
 
 .home {
   background-image: url("../Resources/Images/Backgrounds/home.png");
