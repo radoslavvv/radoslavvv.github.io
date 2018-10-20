@@ -1,496 +1,66 @@
-/*
----------------------------------------------------------------------------------------------- Backgrounds:
-*/
-#home {
-  /* background-image: url("https://image.prntscr.com/image/mckyWX-OQo_bmpNlQU1kCA.png"); */
+.navbar {
+  width: 100%;
+}
+
+.navbar-brand img {
+  width: 65px;
+  height: 55px;
+}
+
+.navbar-brand {
+  color: white;
+  font-family: "Patua One", cursive;
+  font-style: italic;
+  font-size: 35px;
+}
+
+.nav-item {
+  color: white;
+  font-family: "Patua One", cursive;
+  font-size: 25px;
+}
+
+.intro-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.intro {
+  color: white;
+  font-family: "Patua One", cursive;
+  font-size: 45px;
+}
+
+.sub-intro {
+  color: white;
+  font-family: "Patua One", cursive;
+  font-size: 25px;
+}
+
+.see-more-container{
+  position: absolute;
+    top: 93vh;
+} 
+
+.home {
   background-image: url("../Resources/Images/Backgrounds/home.png");
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
   background-size: cover;
-  height:100%;
-  width: auto;
-  padding: 10px;
+  height: 100vh;
 }
 
-#about {
-  /* background-image: url("https://image.prntscr.com/image/M9EjnZ-pThq9RxhXK7ZBnA.png"); */
+.about {
   background-image: url("../Resources/Images/Backgrounds/about-me.png");
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
   background-size: cover;
-  height:100%;
-  width: auto;
-  padding: 10px;
-}
-
-#projects {
-  /* background-image: url("https://image.prntscr.com/image/HnX46g6ORX6loEQ-dU1w3w.png"); */
-  background-image: url("../Resources/Images/Backgrounds/projects.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
-  background-size: cover;
-  height: 100%;
-  width: auto;
-  padding: 10px;
-}
-
-#contact {
-  /* background-image: url("https://image.prntscr.com/image/FKtlUE3KTEage6uQHdAzhg.png"); */
-  background-image: url("../Resources/Images/Backgrounds/contact.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
-  background-size: cover;
-  height: 100%;
-  width: auto;
-  padding: 10px;
-}
-
-/*
-  ------------------------------------------------------------------- Brand:
-  */
-.navbar {
-  position: fixed;
-  z-index: 2;
-}
-
-.brand-text {
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 35px;
-}
-
-.brand-logo {
-  width: 65px;
-  height: 55px;
-}
-
-/*
-  -------------------------------------------------------------------------Intro:
-  */
-.intro {
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 55px;
-  text-align: center;
-  margin: 0px 0px 0px 0px;
-}
-
-.intro-smaller {
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 25px;
-  text-align: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 0 0 0;
-}
-
-/*
-  ---------------------------------------------------------------------Menu: 
-  */
-.menu {
-  margin: 10px 25px 0px auto;
-}
-
-.menu-item {
-  float: right;
-  text-align: right;
-  text-decoration: none;
-  display: inline;
-  margin: 10px;
-}
-
-.menu-item-text {
-  text-decoration: none;
-  color: white;
-  underline: none;
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 30px;
-}
-
-/*
-  -----------------------------------------------------See More:
-  */
-.see-more {
-  font-family: "Patua One", cursive;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  margin-top: 15%;
-}
-
-.see-more-text {
-  color: white;
-  text-decorations: none;
-}
-
-.headline {
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 65px;
-  text-align: center;
-  margin: 0 0 0 0;
-}
-
-/* 
-  ----------------------------------------------------------About Me:   
-  */
-.about-me-text {
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 35px;
-  margin: 45px 150px 0 150px;
-  text-align: center;
-  background-color: lightgray;
-  border-radius: 25px;
-  backround: transparent;
-  background-color: rgba(192, 192, 192, 0.7);
-  text-indent: 30px;
-}
-
-.portret {
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid 3px;
-}
-
-/*
-  -----------------------------------------------Gallery: 
-  */
-div.gallery {
-  margin: 10px;
-  border: 3px solid black;
-  float: left;
-  border-radius: 35px;
-}
-
-div.gallery:hover {
-  border: 2px solid gray;
-  border-radius: 35px;
-}
-
-div.gallery img {
-  width: 600px;
-  height: 300px;
-  border-radius: 35px;
-}
-
-.overlay {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #00001a;
-  border-radius: 35px;
-}
-
-.container {
-  z-index: 1;
-  position: relative;
-  padding: 0px;
-  clear: both;
-}
-
-.container:hover .overlay {
-  opacity: 0.9;
-}
-
-.image-text {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 35px;
-}
-
-
-/*
-  ------------------------------------------------------------------- Brand:
-  */
-.brand-text {
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 35px;
-}
-
-.brand-logo {
-  width: 65px;
-  height: 55px;
-}
-
-/*
-  -------------------------------------------------------------------------Intro:
-  */
-.intro {
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 55px;
-  text-align: center;
-  margin: 450px 0 0 0;
-}
-
-.intro-smaller {
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 25px;
-  text-align: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 0 0 0;
-}
-
-/*
-  ---------------------------------------------------------------------Menu: 
-  */
-.menu {
-  margin: 10px 25px auto auto;
-}
-
-.menu-item {
-  float: right;
-  text-align: right;
-  text-decoration: none;
-  display: inline;
-  margin: 10px;
-}
-
-.menu-item-text {
-  text-decoration: none;
-  color: white;
-  underline: none;
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 30px;
-}
-
-/*
-  -----------------------------------------------------See More:
-  */
-.see-more {
-  font-family: "Patua One", cursive;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  margin-top: 15%;
-  cursor: pointer;
-}
-
-.see-more-text {
-  color: white;
-  text-decorations: none;
-}
-
-.headline {
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 65px;
-  text-align: center;
-  margin: 0 0 0 0;
-}
-
-/* 
-  ----------------------------------------------------------About Me:   
-  */
-.about-me-text {
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 35px;
-  margin: 45px 150px 0 150px;
-  text-align: center;
-  background-color: lightgray;
-  border-radius: 25px;
-  backround: transparent;
-  background-color: rgba(192, 192, 192, 0.7);
-  text-indent: 30px;
-}
-
-.portret {
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid 3px;
-  width: 400px;
-}
-
-/*
-  -----------------------------------------------Gallery: 
-  */
-div.gallery {
-  margin: 10px;
-  border: 2px solid black;
-  float: left;
-  border-radius: 35px;
-}
-
-div.gallery:hover {
-  border: 2px solid black;
-  border-radius: 35px;
-}
-
-div.gallery img {
-  width: 600px;
-  height: 300px;
-  border-radius: 35px;
-
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #00001a;
-  border-radius: 30px;
-  border: 3px solid black;
-}
-
-.container {
-  position: relative;
-  border-radius: 35px;
-}
-
-.container:hover .overlay {
-  opacity: 0.9;
-}
-
-.image-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 35px;
-}
-
-
-/*  
-  -----------------------------------------------------Social Media:   
-  */
-#contact img {
-  width: 250px;
-  height: 250px;
-}
-
-.social-media img {
-  width: 200px;
-  height: 200px;
-  margin: 0px 225px 0px 200px;
-}
-
-.social-media-second {
-  margin: 50px 0px 0px 0px;
-}
-
-.social-media-second img {
-  width: 200px;
-  height: 200px;
-  margin: 50px 225px 0px 200px;
-}
-
-.social-media-images .second img:hover {
-  border: 3px solid white;
-  border-radius: 55px;
-}
-
-.social-media-images .first img:hover {
-  border: 3px solid white;
-  border-radius: 50%;
-}
-
-.social-media-text span {
-  color: white;
-  font-family: "Patua One", cursive;
-  font-size: 35px;
-  text-align: center;
-  display: inline-block;
-}
-
-.social-media-text {
-  text-align: center;
-}
-
-.social-media-images {
-  text-align: center;
-}
-
-.social-media-images img {
-  display: inline-block;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-.see-more-text .fa-angle-down {
-  display: none;
-}
-
-#return-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7);
-  width: 50px;
-  height: 50px;
-  display: block;
-  text-decoration: none;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
-  display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  z-index: 2;
-}
-#return-to-top i {
-  color: #fff;
-  margin: 0;
-  position: relative;
-  left: 16px;
-  top: 13px;
-  font-size: 19px;
-  
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-#return-to-top:hover {
-  background: rgba(0, 0, 0, 0.9);
-}
-#return-to-top:hover i {
-  color: #fff;
-  top: 5px;
+  height: 100vh;
 }
