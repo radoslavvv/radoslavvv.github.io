@@ -1,30 +1,33 @@
 $(document).ready(() => {
   $(".see-more-text").on("click", () => {
-    document.querySelector('#about').scrollIntoView({
-      behavior: 'smooth'
+    document.querySelector("#about").scrollIntoView({
+      behavior: "smooth"
     });
   });
-  $('#contactLink').on("click", () => {
-    document.querySelector('#contact').scrollIntoView({
-      behavior: 'smooth'
+
+  $("#contacts-link").on("click", () => {
+    document.querySelector("#contact").scrollIntoView({
+      behavior: "smooth"
     });
   });
-  $('#aboutLink').on("click", () => {
-    document.querySelector('#about').scrollIntoView({
-      behavior: 'smooth'
+
+  $("#about-me-link").on("click", () => {
+    document.querySelector("#about").scrollIntoView({
+      behavior: "smooth"
     });
   });
-  $('#projectsLink').on("click", () => {
-    document.querySelector('#projects').scrollIntoView({
-      behavior: 'smooth'
+
+  $("#projects-link").on("click", () => {
+    document.querySelector("#projects").scrollIntoView({
+      behavior: "smooth"
     });
   });
 
   $(".navbar-brand").on("click", () => {
-    document.querySelector('#home').scrollIntoView({
-      behavior: 'smooth'
+    document.querySelector("#home").scrollIntoView({
+      behavior: "smooth"
     });
-  })
+  });
 
   $(".see-more-text").on("mouseenter", () => {
     $(".fa-angle-down").fadeIn(350);
@@ -34,26 +37,34 @@ $(document).ready(() => {
   });
 
   $(window).on("scroll", function() {
-    if ($(this).scrollTop() >= 910) {
+    let hidePoint = $("#home").get(0).scrollHeight;
+
+    if ($(this).scrollTop() >= hidePoint - 50) {
       $(".brand-text").slideUp();
+      // $("#contacts-link").slideUp();
+      // $("#about-me-link").slideUp();
+      // $("#projects-link").slideUp();
     }
-    if ($(this).scrollTop() <= 910) {
+    if ($(this).scrollTop() <= hidePoint - 50) {
       $(".brand-text").slideDown();
     }
   });
 
   $(window).on("scroll", function() {
     if ($(this).scrollTop() >= 250) {
-      $('#return-to-top').fadeIn(900);
+      $("#return-to-top").fadeIn(900);
     } else {
-      $('#return-to-top').fadeOut(900);
+      $("#return-to-top").fadeOut(900);
     }
   });
 
-  $('#return-to-top').on("click", () => {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 500);
+  $("#return-to-top").on("click", () => {
+    $("body,html").animate(
+      {
+        scrollTop: 0
+      },
+      500
+    );
   });
 });
 
