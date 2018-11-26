@@ -17,6 +17,9 @@ $(document).ready(() => {
     });
   });
 
+
+
+  
   $("#projects-link").on("click", () => {
     document.querySelector("#projects").scrollIntoView({
       behavior: "smooth",
