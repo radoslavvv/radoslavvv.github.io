@@ -1,4 +1,5 @@
 body {
+  background-color: #282828;
   overflow-x: hidden;
 }
 
@@ -16,6 +17,7 @@ body {
   padding: 10px;
   width: 100vw;
   display: inline-block;
+  margin: 10px auto;
 }
 
 #about {
@@ -29,6 +31,7 @@ body {
   width: auto;
   padding: 10px;
   display: inline-block;
+  margin: 10px auto;
 }
 
 #projects {
@@ -42,6 +45,7 @@ body {
   width: 100%;
   padding: 10px;
   display: inline-block;
+  margin: 10px auto;
 }
 
 #contact {
@@ -55,6 +59,7 @@ body {
   width: auto;
   padding: 10px;
   display: inline-block;
+  margin: 10px auto;
 }
 
 /*
@@ -164,11 +169,11 @@ body {
   color: white;
   font-family: "Patua One", cursive;
   font-size: 35px;
-  margin: 45px 150px 0 150px;
+  margin: 80px 150px 0 150px;
   text-align: center;
   background-color: lightgray;
   border-radius: 25px;
-  backround: transparent;
+  background: transparent;
   background-color: rgba(192, 192, 192, 0.7);
   text-indent: 30px;
 }
@@ -179,7 +184,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   border: solid 3px;
-  width: 400px;
+  width: 400px;;
+  height: 400px;
+  margin-top: 65px;
 }
 
 /*
@@ -454,7 +461,7 @@ figure.overlay {
   width: 100%;
   background: #000000;
   text-align: left;
-  margin-left: 150px;
+  /* margin-left: 150px; */
   border-radius: 25px;
   margin-bottom: 50px;
 }
@@ -464,9 +471,9 @@ figure.overlay * {
   border-radius: 25px;
 }
 figure.overlay img {
-  max-width: 100%;
+  /* max-width: 100%; */
   opacity: 1;
-  width: 100%;
+  /* width: 100%; */
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
   border-radius: 25px;
