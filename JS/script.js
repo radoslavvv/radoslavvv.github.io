@@ -1,47 +1,51 @@
 $(document).ready(() => {
   $(".see-more-text").on("click", () => {
     document.querySelector("#about").scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
 
   $("#contacts-link").on("click", () => {
     document.querySelector("#contact").scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
+
+  $("#brand-logo").on("click", ()=> {
+    document.querySelector("#home").scrollIntoView({
+      behavior: "smooth",
+    });
+  })
 
   $("#about-me-link").on("click", () => {
     document.querySelector("#about").scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
 
-
-
-  
   $("#projects-link").on("click", () => {
     document.querySelector("#projects").scrollIntoView({
       behavior: "smooth",
-      block: "start"
+      block: "start",
     });
   });
 
   $(".navbar-brand").on("click", () => {
     document.querySelector("#home").scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
 
   $(".see-more-text").on("mouseenter", () => {
     $(".fa-angle-down").fadeIn(350);
   });
+
   $(".see-more-text").on("mouseleave", () => {
     $(".fa-angle-down").fadeOut(350);
   });
 
   $(window).on("scroll", function() {
-    let hidePoint = $("#home").get(0).scrollHeight;
+    const hidePoint = $("#home").get(0).scrollHeight;
 
     if ($(this).scrollTop() >= hidePoint - 50) {
       $(".brand-text").slideUp();
@@ -65,9 +69,9 @@ $(document).ready(() => {
   $("#return-to-top").on("click", () => {
     $("body,html").animate(
       {
-        scrollTop: 0
+        scrollTop: 0,
       },
-      500
+      500,
     );
   });
 });
